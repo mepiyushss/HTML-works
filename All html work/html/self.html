@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEW PROJECT</title>
+    <script>
+      function alert() {
+        var a = prompt("Enter entries");
+        document.getElementById("ENTRY1").innerHTML = a;
+      }
+    </script>
+    <style>
+      body {
+        background-color: black;
+      }
+      #ENTRY1 {
+        background-color: white;
+        border: 10px solid white;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ENTRY1"></div>
+    <hr class="cls" />
+
+    <button id="btn" onclick="alert();">RUN</button>
+  </body>
+</html>

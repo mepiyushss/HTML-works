@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right bottom,red,black,blue);
+
+    
+    }
+
+  
+#index{
+    height: 100vh; 
+    width: 100vw;
+    /* border: 2px solid black; */
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 350px;
+    width: 300px;
+    /* border:10px solid sienna; */
+    /* box-shadow: 0 10px 12px rgb(13, 149, 117); */ 
+}
+#box{
+    color: whitesmoke;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 12px rgb(9, 238, 127);
+    border: 2px solid green;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+ }
+.box-1{
+    color: whitesmoke;
+    width: 416px;
+    height: 300px;
+    box-shadow: 0 10px 12px rgb(9, 238, 127);
+    border: 2px solid green;
+    border-radius: 60px;
+    margin: 47px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+.box-2{
+    color: whitesmoke;
+    width: 416px;
+    height: 300px;
+    box-shadow: 0 10px 12px rgb(9, 238, 127);
+    border: 2px solid green;
+    border-radius: 60px;
+    margin: 47px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+.box-3
+{
+    color: whitesmoke;
+    width: 416px;
+    height: 300px;
+    box-shadow: 0 10px 12px rgb(9, 238, 127);
+    border: 2px solid green;
+    border-radius: 60px;
+    margin: 47px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+.box-4
+{
+    color: whitesmoke;
+    width: 416px;
+    height: 300px;
+    box-shadow: 0 10px 12px rgb(9, 238, 127);
+    border: 2px solid green;
+    border-radius: 60px;
+    margin: 47px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}

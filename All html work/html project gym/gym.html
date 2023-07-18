@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM MAFIAt</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        font-weight: 1000;
+        margin: 0px, auto;
+        padding: 0px;
+        /* background-image: url('https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3ltfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); */
+        /* height: 4400px;
+        background-size: 2100px 2920px;
+        background-repeat: repeat-y; */
+    }
+
+    header::before {
+        background: url(https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3ltfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300vh;
+        z-index: -1;
+        /* opacity: 0.8;  */
+    }
+
+    .left {
+
+        display: inline-block;
+        position: absolute;
+        left: 35px;
+        top: 20px;
+    }
+
+
+    .mid {
+
+        display: block;
+        width: 39%;
+        margin: 40px auto;
+
+
+    }
+
+    .right {
+        display: inline-block;
+
+        position: absolute;
+
+        right: 35px;
+        position: fixed;
+        top: 20px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 23px;
+    }
+
+    .navbar li a {
+
+        color: white;
+        text-decoration: none;
+        padding: 34px 24px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .left img {
+        width: 103px;
+
+    }
+
+    .left :hover {
+        color: blue;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(121, 116, 109);
+    }
+
+    .left center {
+        font-size: 25px;
+    }
+
+    .container {
+        color: #1c1cbb;
+        float: right;
+        position: relative;
+        top: 1600px;
+        right: 600px;
+        border: 2px solid rgba(250, 247, 247, 0.918);
+        margin: 20px 20px;
+        padding: 20px 10px;
+        left: 120px;
+        border-radius: 100px;
+        display: block;
+
+    }
+
+    .c {
+        font-weight: 1000;
+        color: rgb(228, 5, 5);
+        float: right;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 50px;
+        position: relative;
+        top: 1500px;
+        right: 600px;
+    }
+
+    .form input {
+        text-align: center;
+        display: block;
+        margin: 5px auto;
+        padding: 10px 24PX;
+        width: 308px;
+        border-radius: 20px;
+
+        font-family: 'Baloo Bhai 2', cursi;
+        font-size: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <center><img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDg8NDRAQDw0NEBAVDw4PEA8NDhAQFRcWFxYSFRUYHSggGxooGxUWIjIiJikrLi4uGR8yNzUtNiktLi0BCgoKDg0OGhAQGC0lHyUtLTItLi0tLS0vLS4tLS0tLSstLS8tLS0vNC0tLSstLS0tLS0tLS4tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAABAUGAgMHAQj/xABBEAABAwMCAgcECAQDCQAAAAABAAIDBAUREiExQQYTIlFhcYEUMpGhByNCUmJyscEzQ4LwJJLRFSU0RGOis+Hx/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QAMhEAAgECAwcCBAUFAAAAAAAAAAECESEDMUESUWFxgaHwkcEiUrHRBBMycvEjM0LC4f/aAAwDAQACEQMRAD8A8cREWBsEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAERTrNbJK2dlPDjU/JL3bMjYN3SPPJoH7DmoclFNydEicyNTwSSvEcTHySO92ONrpHnya3cq9b0IueMupxH4Sz00Lv8rn5VwwVBgkhsUbo6QSCE1jQW1lxqMZ0RkDIbjLtLcBrQSSM4Uql6CXCkAeXMbcZcOZBBC2vrRnPakkeRHA3Oe3q3wcE8Fg3+JmtqKUd1U2+tGqcltPk6oluKzvy8v2MbdLDWUW9VTzRM2+sI1Rb8PrG5b81Wr0mppr7bQH1tzpoS8Z9mrKkVLnt5jqwxxI8lRGkpbtqFI2OlubckUzCWUdZjiafXgxv56DsfiRX83FwknjpU3xrbmndLjfjRXFFL9Jk0XOSNzHOY9pa9hIc1wLXNcNiCDwK4LqICIiEBERAEREAREQBERAEREAREQBERAEREAREQBEUy222ereY6aMyva0uLGlurSCASASM8RwUNpKrJIZW4t1nljbDaIezc7uWGrduTS0fvCM9xIBe4dwxzCn27oi6khZW09PLW1YzojqmsoY6Z4/mPje7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"
+                    alt="error">
+            </center>
+            <center>Fitness man</center>
+        </div>
+        <!-- for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"><strong>Home</strong></a></li>
+                <li><a href="#"><strong>About us</strong></a></li>
+                <li><a href="#"><strong>Fitness Calculator</strong></a></li>
+                <li><a href="#"><strong>Contact us</strong></a></li>
+            </ul>
+        </div>
+        <!-- for any buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="c">APPLICATION FORM OPENS HERE...</div>
+    <div class="container">
+        <h1>JOIN THE BEST GYM OF RENUKOOT NOW</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="form">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+
+            <div class="form">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+
+            <div class="form">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your E mail ID">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your Phone no.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

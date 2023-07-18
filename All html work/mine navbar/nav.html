@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar creation by me </title>
+    <style>
+        body {
+            background: linear-gradient(to right, red, black, blue);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+            width: 100%;
+            border-radius: 50%;
+            background-color: rgba(2, 2, 1, 0.774);
+            ;
+        }
+
+
+        .container::before {
+            content: "";
+            position: absolute;
+            background: url(im.jpg)no-repeat center;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        .item a {
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 2rem;
+            margin: 3px;
+            padding: 10px 44px;
+            color: honeydew;
+        }
+
+        .item a:hover {
+            color: rgb(62, 27, 189);
+            border-radius: 50%;
+            background-color: rgb(165, 49, 49);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item" id="navbar">
+            <a href="" target="_blank">Home</a>
+            <a href="" target="_blank">About us</a>
+            <a href="" target="_blank">Contact</a>
+            <a href="" target="_blank">Know more</a>
+
+        </div>
+</body>
+
+</html>
